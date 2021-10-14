@@ -1,0 +1,35 @@
+body{
+    background-image: url(https://img.freepik.com/free-vector/watercolor-abstract-landscape-background_52683-25321.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0 auto;
+    text-align:center;
+    background-color: rgb(104, 90, 235);
+}
+.div{
+    margin: 0 auto;
+    text-align:center;
+    padding-left: 200px;
+    margin-left: 200px;
+}
+input{
+    width: 300px;
+    padding-bottom: 20px;
+    margin: 40px;
+    box-sizing: border-box;
+    background-color: lightyellow;
+    border-radius: 18px;
+}
+input[type = submit]{
+    font-size: 24px;
+    font-family: cursive;
+    width: 20%;
+    color: indigo;
+    padding: 14px 10px;
+    margin: 8px 0;
+    background-color: indianred;
+}
+p{
+font-family: monospace;
+}

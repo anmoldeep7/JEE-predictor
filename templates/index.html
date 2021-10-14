@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>JEE Percentile</title>
+{% endblock %}
+
+{% block body %}
+<div style="margin: 0 auto; text-align:center;">
+    <h1><u><font color="crimson" size="+4">JEE Mains 2020</font></u></h1>
+    <h2><font color="firebrick" size="+3">Percentile Predictor</font></h2>
+    <form action="/predict" method="POST">
+        <font size="+2"><p style="font-family: monospace;">
+        <label for="Physics" style="color:#6EE8E0"><b>Enter percentile of Physics: </b></label><br>
+        <input type="text" name="physics" required style="width: 300px;padding: 10px;padding-bottom: 15px;margin: 20px;box-sizing: border-box;background-color: lightyellow;border-radius: 14px;"><br>
+        <label for="Chemistry" style="color:#6EE8E0"><b>Enter percentile of Chemistry: </b></label><br>
+        <input type="text" name="chemistry" required style="width: 300px;padding: 10px;padding-bottom: 15px;margin: 20px;box-sizing: border-box;background-color: lightyellow;border-radius: 14px;"><br>
+        <label for="Maths" style="color:#6EE8E0"><b>Enter percentile of Mathematics: </b></label><br>
+        <input type="text" name="maths" required style="width: 300px;padding: 10px;padding-bottom: 15px;margin: 20px;box-sizing: border-box;background-color: lightyellow;border-radius: 14px;"><br><br>
+        <input type="submit" value="Predict" style="font-size: 24px;font-family: cursive;width: 20%;color: #E2F5F2;padding: 14px 10px;margin: 8px 0;background-color: #0F269D;"><br><br>
+        </p></font>
+    </form>
+    <h2 style="color: red; font-size: 30px;">{{ prediction_text }}</h2>
+</div>
+{% endblock %}

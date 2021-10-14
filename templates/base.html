@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        {% block head %}{% endblock %}
+    </head>
+    <body style="background-image: url(https://previews.123rf.com/images/peshkov/peshkov1903/peshkov190300852/118913638-digital-circuit-head-on-blue-background-with-binary-code-ai-and-technology-concept-3d-rendering.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0 auto;
+    text-align:center;
+    background-color: rgb(104, 90, 235);">
+        {% block body %}{% endblock %}
+    </body>
+</html>
